@@ -1,0 +1,32 @@
+# Geo-Resilience Initiative Backend Requirements (Windows-friendly)
+# Python 3.10+
+# NOTE: Install GDAL separately first, then run: pip install -r requirements_windows.txt
+
+# FastAPI and server
+fastapi==0.104.1
+uvicorn[standard]==0.24.0
+pydantic==2.5.0
+pydantic-settings==2.1.0
+
+# Database (optional - can skip if not using PostgreSQL)
+sqlalchemy==2.0.23
+psycopg2-binary==2.9.9
+geoalchemy2==0.14.2
+
+# Geospatial libraries (install these AFTER GDAL)
+# rasterio - installed separately
+# geopandas - installed separately  
+shapely==2.0.2
+# fiona - installed separately
+# pyproj - installed separately
+
+# Scientific computing
+numpy==1.26.2
+scipy==1.11.4
+pandas==2.1.3
+
+# Utilities
+python-multipart==0.0.6
+python-dotenv==1.0.0
+
+
